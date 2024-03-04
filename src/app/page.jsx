@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Form from "./Form";
 
 export default function Home() {
   const [students, setStudents] = useState([]);
@@ -34,6 +35,7 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <Form />
       </div>
     </main>
   );
