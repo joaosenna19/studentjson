@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Form from "./Form";
+import Form from "@/components/Form";
+import StudentsTable from "@/components/StudentsTable";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [students, setStudents] = useState([]);
@@ -21,21 +23,11 @@ export default function Home() {
   }, [students]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold">Student Information</h1>
+    <main className="flex min-h-screen flex-col items-center justify-between p-10">
       <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center">
-          {students.map((student) => (
-            <div
-              key={student.id}
-              className="flex flex-col items-center justify-center"
-            >
-              <p className="text-xl font-bold">{student.first_name}</p>
-              <p className="text-lg">{student.last_name}</p>
-            </div>
-          ))}
-        </div>
+        <StudentsTable data={students} />
         <Form />
+        <Footer />
       </div>
     </main>
   );
