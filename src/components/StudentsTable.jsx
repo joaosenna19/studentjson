@@ -1,12 +1,12 @@
 const StudentsTable = ({ data }) => {
-  const theadClasses = "py-2 px-4 border-b";
-  const tdClasses = "py-2 px-4";
+  const tHeadClasses = "py-2 px-4 border-b";
+  const tdClasses = "py-2 px-4 text-center";
   return (
     <table className="min-w-full">
       <thead>
         <tr>
-          <th className={theadClasses}>Name</th>
-          <th className={theadClasses}>Date of Birth</th>
+          <th className={tHeadClasses}>Name</th>
+          <th className={tHeadClasses}>Date of Birth</th>
           <th className="py-2 px-4 border-b">Grade</th>
         </tr>
       </thead>
