@@ -24,10 +24,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-10">
-      <div className="flex flex-col items-center justify-center">
-        <StudentsTable data={students} />
+      <div className="flex flex-col items-center justify-center gap-8">
         <Form />
-        <Footer />
+        <StudentsTable data={students} />
       </div>
     </main>
   );
