@@ -79,7 +79,7 @@ const Form = () => {
         value={newStudent.dob}
         onChange={handleChange}
         classes={formFieldClasses}
-        min={"2004-01-01"}
+        min={"1920-01-01"}
         max={"2018-12-31"}
       />
       {/* FormField component for student's grade */}
