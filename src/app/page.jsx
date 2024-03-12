@@ -16,7 +16,7 @@ export default function Home() {
         headers: { "Content-Type": "application/json" }, // Setting content type header
       });
 
-      const students = await res.json(); // Extracting JSON data from the response
+      const students = await res.json(); // Extr5acting JSON data from the response
 
       setStudents(students); // Updating the 'students' state with the fetched data
     };

@@ -41,6 +41,13 @@
       "last_name": "Radicchi",
       "dob": "2018-12-31",
       "grade": 12
+    },
+    {
+      "id": "0597",
+      "first_name": "Diogo",
+      "last_name": "Carbone",
+      "dob": "2010-02-02",
+      "grade": "12"
     }
   ]
 }
