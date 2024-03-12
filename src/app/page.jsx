@@ -10,17 +10,14 @@ export default function Home() {
   // Fetch students data from the server when the component mounts or when the 'students' state changes
   useEffect(() => {
     const fetchStudents = async () => {
-      const res = await fetch(
-        "https://student-json-lemon.vercel.app/students",
-        {
-          // Fetch students from the server
-          method: "GET", // Using GET method to retrieve data
-          headers: { "Content-Type": "application/json" }, // Setting content type header
-        }
-      );
-      console.log(res);
+      const res = await fetch("http://localhost:5000/students", {
+        // Fetch students from the server
+        method: "GET", // Using GET method to retrieve data
+        headers: { "Content-Type": "application/json" }, // Setting content type header
+      });
+
       const students = await res.json(); // Extracting JSON data from the response
-      console.log(students);
+
       setStudents(students); // Updating the 'students' state with the fetched data
     };
 

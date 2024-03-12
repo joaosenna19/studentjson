@@ -32,7 +32,7 @@ const Form = () => {
     });
 
     // Send a POST request to the server with student data
-    fetch("https://student-json-lemon.vercel.app/students", {
+    fetch("http://localhost:5000/students", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
