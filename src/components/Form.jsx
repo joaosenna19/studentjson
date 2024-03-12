@@ -50,10 +50,10 @@ const Form = () => {
       {/* FormField component for student's first name */}
       <FormField
         htmlFor={"first_name"}
-        title={"Student's First Name"}
+        title={" First Name"}
         type={"text"}
         id={"first_name"}
-        placeholder={"Enter student's first name"}
+        placeholder={"Enter  first name"}
         value={newStudent.first_name}
         onChange={handleChange}
         classes={formFieldClasses}
@@ -61,10 +61,10 @@ const Form = () => {
       {/* FormField component for student's last name */}
       <FormField
         htmlFor={"last_name"}
-        title={"Student's Last Name"}
+        title={" Last Name"}
         type={"text"}
         id={"last_name"}
-        placeholder={"Enter student's last name"}
+        placeholder={"Enter  last name"}
         value={newStudent.last_name}
         onChange={handleChange}
         classes={formFieldClasses}
@@ -73,7 +73,7 @@ const Form = () => {
       {/* FormField component for student's date of birth */}
       <FormField
         htmlFor={"dob"}
-        title={"Student's DOB"}
+        title={" DOB"}
         type={"date"}
         id={"dob"}
         value={newStudent.dob}
@@ -85,7 +85,7 @@ const Form = () => {
       {/* FormField component for student's grade */}
       <FormField
         htmlFor={"grade"}
-        title={"Student's Grade"}
+        title={" Grade"}
         type={"number"}
         id={"grade"}
         value={newStudent.grade}
