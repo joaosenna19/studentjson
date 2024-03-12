@@ -24,7 +24,7 @@ const Form = () => {
       dob: "",
       grade: "",
     });
-    fetch("http://localhost:5000/students", {
+    fetch("http://localhost:3000/students", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
